@@ -1,5 +1,5 @@
 # Kotlin-Projects
-4 Kotlin apps made as part of coursework (File Explorer, Space Invaders, PDF Reader).
+4 Kotlin apps made as part of coursework (File Explorer, LightBox, Space Invaders, PDF Reader).
 
 **Stack**: Kotlin, Java, JavaFx, MVC Framework, Gradle, Intellij.
 
