@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.pdfreader.MainActivity">
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item
+            android:layout_width="wrap_content"
+            app:showAsAction="ifRoom"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/drawButton" android:background="#FFB5B5" android:title="Draw"/>
+    <item
+            android:layout_width="wrap_content"
+            app:showAsAction="ifRoom"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/eraseButton" android:background="#2196F3" android:title="Erase"/>
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="#ECE8F3">
+
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/pageLayout" tools:layout_editor_absoluteY="-2dp"
+            tools:layout_editor_absoluteX="0dp" tools:ignore="MissingConstraints">
+        <com.example.pdfreader.LockableScrollView
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/pdfScrollView">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/pdfLayout"
+                    tools:layout_editor_absoluteY="-2dp"
+                    tools:layout_editor_absoluteX="0dp"/>
+        </com.example.pdfreader.LockableScrollView>
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:theme="?attr/actionBarTheme"
+                android:id="@+id/my_toolbar">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erase"
+                    android:layout_gravity="right"
+                    android:id="@+id/erase_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highlight"
+                    android:layout_gravity="right"
+                    android:id="@+id/highlight_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Draw"
+                    android:layout_gravity="right"
+                    android:id="@+id/draw_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pan"
+                    android:layout_gravity="right"
+                    android:id="@+id/pan_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undo"
+                    android:layout_gravity="right"
+                    android:id="@+id/undo_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redo"
+                    android:layout_gravity="right"
+                    android:id="@+id/redo_button"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scroll"
+                    android:layout_gravity="right"
+                    android:id="@+id/scroll_button"
+                    android:visibility="visible"
+            />
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomAppBar3"
+                app:backgroundTint="?attr/colorPrimary"
+                android:layout_gravity="end" tools:ignore="BottomAppBar">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/bottomBarButtons"
+                    android:layout_gravity="center"
+                    android:layout_alignParentBottom="true"
+                    tools:layout_editor_absoluteY="-2dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_centerInParent="true">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Left"
+                        android:layout_gravity="center"
+                        android:id="@+id/left_page_button"
+                />
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" android:id="@+id/page_count_text" android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Right"
+                        android:layout_gravity="center"
+                        android:id="@+id/right_page_button"
+                />
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
